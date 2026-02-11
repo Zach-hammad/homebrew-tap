@@ -1,25 +1,24 @@
 class Repotoire < Formula
   desc "Graph-powered code analysis CLI - 81 detectors for security, architecture & quality"
   homepage "https://github.com/Zach-hammad/repotoire"
-  version "0.3.34"
+  version "0.3.35"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/Zach-hammad/repotoire/releases/download/v0.3.34/repotoire-macos-aarch64.tar.gz"
-      sha256 "f983d5ca7d624c6eedf13f6dc3a3eb4c3908473c5a84f7cb9c6f66d2f200605e"
+      url "https://github.com/Zach-hammad/repotoire/releases/download/v0.3.35/repotoire-macos-aarch64.tar.gz"
+      sha256 "6e842a39b3ad6bf8d93e4a425ff27b2f384124ad87afe02a3be74b949bab4641"
     end
     on_intel do
-      # Intel Macs - use ARM binary with Rosetta 2
-      url "https://github.com/Zach-hammad/repotoire/releases/download/v0.3.34/repotoire-macos-aarch64.tar.gz"
-      sha256 "f983d5ca7d624c6eedf13f6dc3a3eb4c3908473c5a84f7cb9c6f66d2f200605e"
+      url "https://github.com/Zach-hammad/repotoire/releases/download/v0.3.35/repotoire-macos-aarch64.tar.gz"
+      sha256 "6e842a39b3ad6bf8d93e4a425ff27b2f384124ad87afe02a3be74b949bab4641"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/Zach-hammad/repotoire/releases/download/v0.3.34/repotoire-linux-x86_64.tar.gz"
-      sha256 "64b8cd65926f0a30405f361a12b233e7901e72689e165e3195ec326b640fe2ac"
+      url "https://github.com/Zach-hammad/repotoire/releases/download/v0.3.35/repotoire-linux-x86_64.tar.gz"
+      sha256 "9291e96e916debb8acdd263afb29c9a1128ecbe3535688dcffdff090957be93f"
     end
   end
 
