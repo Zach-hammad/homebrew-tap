@@ -1,19 +1,29 @@
 class Repotoire < Formula
   desc "Graph-powered code analysis with 108 detectors"
   homepage "https://github.com/Zach-hammad/repotoire"
-  version "0.3.91"
+  version "0.3.98"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/Zach-hammad/repotoire/releases/download/v0.3.91/repotoire-macos-aarch64.tar.gz"
-      sha256 "22bdf735e46008847e3b590ccdc10828448cb305d1ddddd1725e2f8ac5ee1bfe"
+      url "https://github.com/Zach-hammad/repotoire/releases/download/v#{version}/repotoire-macos-aarch64.tar.gz"
+      sha256 "PLACEHOLDER_MACOS_ARM64"
+    end
+    on_intel do
+      url "https://github.com/Zach-hammad/repotoire/releases/download/v#{version}/repotoire-macos-x86_64.tar.gz"
+      sha256 "PLACEHOLDER_MACOS_X86_64"
     end
   end
 
   on_linux do
-    url "https://github.com/Zach-hammad/repotoire/releases/download/v0.3.91/repotoire-linux-x86_64.tar.gz"
-    sha256 "73b4b1ba292a0a6f49cb02cb9f613504ed0151619e4382a9edd5c9fe259d3b1e"
+    on_arm do
+      url "https://github.com/Zach-hammad/repotoire/releases/download/v#{version}/repotoire-linux-aarch64.tar.gz"
+      sha256 "PLACEHOLDER_LINUX_ARM64"
+    end
+    on_intel do
+      url "https://github.com/Zach-hammad/repotoire/releases/download/v#{version}/repotoire-linux-x86_64.tar.gz"
+      sha256 "PLACEHOLDER_LINUX_X86_64"
+    end
   end
 
   def install
