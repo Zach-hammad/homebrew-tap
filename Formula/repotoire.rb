@@ -1,25 +1,19 @@
 class Repotoire < Formula
-  desc "Graph-powered code analysis CLI - 81 detectors for security, architecture & quality"
+  desc "Graph-powered code analysis with 108 detectors"
   homepage "https://github.com/Zach-hammad/repotoire"
-  version "0.3.35"
+  version "0.3.91"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/Zach-hammad/repotoire/releases/download/v0.3.35/repotoire-macos-aarch64.tar.gz"
-      sha256 "6e842a39b3ad6bf8d93e4a425ff27b2f384124ad87afe02a3be74b949bab4641"
-    end
-    on_intel do
-      url "https://github.com/Zach-hammad/repotoire/releases/download/v0.3.35/repotoire-macos-aarch64.tar.gz"
-      sha256 "6e842a39b3ad6bf8d93e4a425ff27b2f384124ad87afe02a3be74b949bab4641"
+      url "https://github.com/Zach-hammad/repotoire/releases/download/v0.3.91/repotoire-macos-aarch64.tar.gz"
+      sha256 "22bdf735e46008847e3b590ccdc10828448cb305d1ddddd1725e2f8ac5ee1bfe"
     end
   end
 
   on_linux do
-    on_intel do
-      url "https://github.com/Zach-hammad/repotoire/releases/download/v0.3.35/repotoire-linux-x86_64.tar.gz"
-      sha256 "9291e96e916debb8acdd263afb29c9a1128ecbe3535688dcffdff090957be93f"
-    end
+    url "https://github.com/Zach-hammad/repotoire/releases/download/v0.3.91/repotoire-linux-x86_64.tar.gz"
+    sha256 "73b4b1ba292a0a6f49cb02cb9f613504ed0151619e4382a9edd5c9fe259d3b1e"
   end
 
   def install
